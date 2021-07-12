@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: repertory
+  cloud:
+    nacos:
+      config:
+        server-addr: ${NACOS_SERVER_ADDR:localhost:31446}
+        name: repertory-conf
+        namespace: xxx
+        file-extension: yml
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR:localhost:31446}
