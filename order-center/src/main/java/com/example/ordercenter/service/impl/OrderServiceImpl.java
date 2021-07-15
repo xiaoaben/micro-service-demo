@@ -25,4 +25,25 @@ public class OrderServiceImpl implements OrderService {
     public int addOrderInfo(OrderEntity orderEntity) {
         return orderRepository.insert(orderEntity);
     }
+
+    /**
+     * 下单流程：
+     * 1、先从库存中心查询商品剩余库存；
+     * 2、从用户中心查询产品角色(vip..)确认用户是否有购买权限/计算折扣<正常应该在下单时计算>；
+     * 步骤1、2使用线程池同时查询，结果处理后没问题，则进行支付，数据入库，下单完成。
+     *
+     * CountDownLatch vs CyclicBarrier
+     * 线程池使用：java线程池动态配置调整？
+     * 考虑秒杀 使用redis 防止超卖
+     */
+    public boolean placeOrder(){
+
+
+
+
+
+        return false;
+    }
+
+
 }

@@ -1,11 +1,11 @@
 spring:
   application:
-    name: order-center
+    name: product-center
   cloud:
     nacos:
       config:
         server-addr: ${NACOS_SERVER_ADDR:localhost:31446}
-        name: order-center
+        name: product-center
         namespace: xxx
         file-extension: yml
       discovery:
