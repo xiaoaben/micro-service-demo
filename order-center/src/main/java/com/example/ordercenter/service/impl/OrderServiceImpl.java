@@ -33,7 +33,7 @@ public class OrderServiceImpl implements OrderService {
      * 步骤1、2使用线程池同时查询，结果处理后没问题，则进行支付，数据入库，下单完成。
      *
      * CountDownLatch vs CyclicBarrier
-     * 线程池使用：java线程池动态配置调整？
+     * 线程池使用：java线程池动态配置调整？  线程池解决的核心问题就是资源管理问题
      * 考虑秒杀 使用redis 防止超卖
      */
     public boolean placeOrder(){
