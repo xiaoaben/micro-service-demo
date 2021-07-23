@@ -9,4 +9,6 @@ public interface OrderService {
     List<OrderEntity> getOrders(String userId);
 
     int addOrderInfo(OrderEntity orderEntity);
+
+    boolean placeOrder(String userId, String productId);
 }

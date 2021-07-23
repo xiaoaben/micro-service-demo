@@ -13,6 +13,14 @@ public class OrderEntity {
     private String userId;
     private Date createTime;
 
+    public OrderEntity() {
+    }
+
+    public OrderEntity(String productId, String userId) {
+        this.productId = productId;
+        this.userId = userId;
+    }
+
     public Long getId() {
         return id;
     }

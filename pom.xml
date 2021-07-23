@@ -24,6 +24,7 @@
 
     <!-- 子模块 -->
     <modules>
+        <module>backstage-management</module>
         <module>order-center</module>
         <module>product-center</module>
         <module>stock-center</module>

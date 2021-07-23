@@ -16,5 +16,5 @@ public interface UserMapper {
             @Result(column = "update_at",property = "updateTime"),
 
     })
-    UserEntity getUserInfoById(String id)throws Exception ;
+    UserEntity getUserInfoById(String id) throws Exception ;
 }

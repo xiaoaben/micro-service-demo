@@ -1,4 +1,4 @@
-package com.example.ordercenter.Repository;
+package com.example.ordercenter.repository;
 
 import com.example.ordercenter.model.OrderEntity;
 import org.springframework.stereotype.Repository;

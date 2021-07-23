@@ -6,4 +6,10 @@ spring:
     password: user01
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     driver-class-name: com.mysql.jdbc.Driver
+task:
+  pool:
+    corePoolSize: 10
+    maxPoolSize: 20
+    keepAliveSeconds: 1000
+    queueCapacity: 50
 
